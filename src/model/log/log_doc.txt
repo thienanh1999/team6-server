@@ -1,0 +1,8 @@
+Type 1 - Drop troop:
+1 <time> <troopType> <troopID> <troopHP> <troopX> <troopY>
+Type 2 - Structure Targeted:
+2 <time> <troopType> <troopID> <troopHP> <troopX> <troopY> <structureType> <structureID> <structureHP> <structureX> <structureY>
+Type 5 - Troop Destroyed:
+5 <time> <troopType> <troopID> <troopHP> <troopX> <troopY>
+Type 6 - Structure Destroyed:
+6 <time> <structureType> <structureID> <structureHP> <structureX> <structureY>
