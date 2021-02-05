@@ -80,6 +80,7 @@ public class BattleController {
         Debug.warn("Create Battle Controller");
         this.troopUsed.put("ARM_1", 0);
         this.troopUsed.put("ARM_2", 0);
+        this.troopUsed.put("ARM_3", 0);
         this.troopUsed.put("ARM_4", 0);
         this.troopUsed.put("ARM_6", 0);
         this.townHallDestroy = false;
@@ -416,6 +417,9 @@ public class BattleController {
             case Constant.FLYING_BOOM:
                 troop = new FlyingBoom(id, 1, dropTroop.getPoint());
                 break;
+            case Constant.GOBLIN:
+                troop = new Goblin(id,1,dropTroop.getPoint());
+                break;
         }
 
         if (troop != null) troop.setBattleController(this);
@@ -473,6 +477,7 @@ public class BattleController {
 
     public EndGame endGame() {
         Debug.warn("End Game At", this.gameTick, this.star);
+        this.showLogs(this.logs);
         EndGame endGame = new EndGame(this.userID, goldClaimed, elixirClaimed, darkElixirClaimed, this.maxTrophy*this.star/3, troopUsed);
         this.endGame = endGame;
         return endGame;

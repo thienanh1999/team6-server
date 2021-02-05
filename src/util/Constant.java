@@ -13,8 +13,9 @@ public class Constant {
     public static final String WARRIOR = "ARM_1";
     public static final String ARCHER = "ARM_2";
     public static final String GIANT = "ARM_4";
+    public static final String GOBLIN = "ARM_3";
     public static final String FLYING_BOOM = "ARM_6";
-    public static final String[] troopTypeList = {"ARM_1", "ARM_2", "ARM_4", "ARM_6"};
+    public static final String[] troopTypeList = {"ARM_1", "ARM_2","ARM_3", "ARM_4", "ARM_6"};
 
     public static final int TARGET_WALL = 0;
     public static final int TARGET_STRUCTURE = 1;
